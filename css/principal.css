@@ -1,0 +1,16 @@
+html{
+	font-size: 62.5% /*regra de 3 sendo que 100% é igual a 16px, porque 16px é o tamanho
+	de fonte padrão dos navegadores*/
+	/*font-size: 10px; /*geralmente o tamanho da fonte nos navegadores é automaticamente 16px*/
+}
+
+body{
+	margin: 0px;
+	font-family: arial, helvetica, sans-serif; 
+	font-size: 1.4rem; /*o pai do body que é o html, tem 10px, então aqui será 14px, pois 1,4*10=14px*/
+}
+
+a:hover{
+	text-decoration: none;
+}
+

@@ -1,0 +1,229 @@
+/*Header*/
+.block-header{
+	padding: 8px;
+	height: 110px;
+	border-bottom: 2px solid #fff;
+	background-color: #ffa000;
+}
+
+.block-header--fixed{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 99;
+}
+
+/*RESPONSIVO MENORES DE 768PX*/
+@media(max-width: 768px){
+	.header-menu{
+		position: fixed;
+		top: 80px;
+		right: 0; /*jogou pra direita, margem zero*/
+		bottom: 0; 
+		width: 240px; /*largura*/
+		background-color: #454545; /*cinza escuro igual do footer*/
+		padding: 25px; /*assim é em todos os lados o espaçamento*/
+		border-left: 10px solid #000; /*bordinha na esquerda desse menu*/
+		display: none;
+
+	}
+
+	.header-menu--toggling{
+		display: block;
+	}
+}
+
+
+
+
+
+
+/*Ítens do Menu e Submenu*/
+.header-menu, .header-submenu{ 
+	list-style: none;
+	font-size: 1.6rem;
+	margin: 0;
+}
+
+/*RESPONSIVO MAIORES DE 769PX*/
+@media (min-width: 769px){
+	.header-submenu{  /*que é o Restrito nesse caso*/
+		position: absolute;
+		display: none; /*os itens cadastro e login não ficarão fixos no display*/
+		top: 35px;
+		left: 0px;
+		padding: 0px;
+		z-index: 100;
+	}
+
+}
+
+
+
+/*Nav*/
+.block-nav{
+	margin-top: 110px;
+	padding: 80px;
+	background-image: url("../imagens/nav_index.jpg");
+}
+ .nav-promocional{
+ 	font-size: 1.6rem;
+ 	text-align: center;
+ }
+
+
+/*RESPONSIVO Botão do Nav Promocional*/
+@media (min-width: 760px) {
+	.nav-promocional{
+		padding: 0 5%;
+		font-size: 2.3rem;
+	}
+}
+
+
+
+
+
+/*Section*/
+.block-section{
+	padding: 10px 0;
+}
+
+.section-produto{
+	position: relative;
+	width: 100%;
+	height: 380px;
+	padding: 10px 0;
+	margin: 5px 0;
+	border: 1px solid #454545;
+	text-align: center;
+	
+}
+
+.section-produto--frete-gratis::after {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	padding: 0 5px; /*espaçamento do texto, do conteúdo, em relação as suas laterais com 5px e cima e baixo 0*/
+	color: #fff;
+	background-color: #006400;
+	content: "Frete Grátis"; /*conteúdo dentro de uma caixinha, dentro do article para indicar frete grátis*/
+	font-size: 1em;
+	line-height: 2;
+
+}
+
+
+/*RESPONSIVO SECTION-PRODUTO TELAS GRANDES*/
+@media (min-width: 970px){
+	.section-produto{
+		float: left;
+		width: 30%; /*cabem 3 na mesma linha, ficam um do lado do outro*/
+		margin: 10px;
+	}
+}
+
+
+
+
+/*Quem Somos*/
+.block-quemsomos{
+	margin-top: 110px;
+	padding: 80px 0;
+	background-image: url("../imagens/sobre.jpg");
+	
+}
+
+.quem-somos{ /*bloco da div dos textos h1 e p*/
+	font-size: 1.6rem; /*primeiro fazemos o mobile first*/
+	text-align: center; 
+}
+
+/*Responsivo Quem Somos Telas Grandes*/
+@media (min-width: 760px) {
+	.quem-somos__titulo{
+		font-size: 2.3rem;
+		padding: 0 5%;
+	}
+}
+
+
+
+/*Depoimentos*/
+.block-depoimentos{
+	margin: 5px 0;
+	padding: 80px 0;
+	background-image: url(../imagens/depoimentos.jpg);
+
+}
+
+.depoimentos{
+	background-color: #fff;
+	opacity: 80%;
+	filter: alpha(opacity=80%);
+	text-align: center;
+	font-size: 1.6rem;
+}
+
+/*Responsivo Depoimentos Telas Grandes*/
+@media (min-width: 760px){
+	.depoimentos{
+		font-size: 2.3rem;
+		padding: 0 5%;
+	}
+}
+
+
+/*Formulário Contato*/
+.block-form{
+	margin: 150px 0 100px; /*190 em cima, 0 nas laterais e 100 pra baixo*/
+}
+
+
+/*Login*/
+
+.block-form--login{
+	margin: 190px auto;
+}
+
+/*Responsivo formulário do login*/
+@media(min-width: 760px){
+	.form--login{
+		width: 30%;
+	}
+}
+
+
+
+
+
+
+
+
+/*Footer-Rodapé*/
+.block-footer {
+	padding: 20px 0;
+
+	background-color: #454545; /*cor cinza mais escuro*/
+
+	color: #fff;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

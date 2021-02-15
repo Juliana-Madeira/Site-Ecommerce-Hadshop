@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Juliana Madeira">
+	<meta name="keywords" content="chapéu, chapéus, hat, shop, boné, toucas,touca">
+	<meta name="description" content="Shopping especializado em Chapéus de Qualidade. Aproveite!!!">
+	<title>Hat Shop - Cadastro</title>
+	<link rel="stylesheet" type="text/css" href="css/extends/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/principal.css"> <!--arquivo dentro de uma pasta "css"-->
+	<link rel="stylesheet" type="text/css" href="css/block.css">
+	<link rel="stylesheet" type="text/css" href="css/elementos.css">
+</head>
+<body>
+	
+	<header class="block-header block-header--fixed"> <!--aqui é o cabeçalho do corpo do site, vai o logotipo,esse header será impresso no navegador, como um bloco do cabeçalho geral e como fixed que
+				é um modificador-->
+		<div class="container"> <!--painel geral, div geral, caixa geral do cabeçalho, class com
+					conteúdo do bootstrap-->
+			<div class="block-header__logomarca"> <!--aqui vai o lotogipo-->
+				<a href="index.html"> <!--link no logotipo que vai direto pra página index.html-->
+					<img src="imagens/logotipo/logo.png" width="99" height="68"  alt="logotipo">
+				</a>
+			</div>
+
+					 <!--testando como na udemy para fazer menu numa outra div-->
+					<!--como no curso da softblue, no caso está dentro do header-->
+						<div class="block-header__menu"> 
+							<button class="bar-button js-bar-button"></button>
+							<!--colocar imagem desse botão acima no css e usar javascript-->
+							<ul class="header-menu js-menu"> <!--menu feito por meio de listas não ordenadas-->
+							<a href="index.html">
+								<li class="header-menu__item">Home</li>
+							</a>
+							<a href="sobre.html">
+								<li class="header-menu__item">Sobre</li>
+							</a>
+							<a href="contato.html">
+								<li class="header-menu__item">Contato</li>
+							</a>
+							<a href="" class="header-menu__item--button">
+								<li class="header-menu__item"> Restrito
+									<ul class="header-submenu"> <!--aqui é um bloco igual ao bloco do menu, header menu aqui é header submenu-->
+										<a href="login.html">
+											<li class="header-submenu__item">Login</li>
+										</a>
+										<a href="cadastro.html">
+											<li class="header-submenu__item">Cadastro</li>
+										</a>
+									</ul>
+								</li>
+							</a>
+							</ul>
+						</div>
+					
+			
+			<div class="block-header__descricao">Hat Shop</div> <!--fez isso como uma descrição do projeto,
+			é o nome da empresa abaixo do logotipo-->
+		</div>	
+	</header>
+	
+
+	<main class="block-form">
+		<div class="container">
+			<h1 class="form__titulo">Cadastro</h1>
+			<h3 class="form__subtitulo">Cadastre-se e ganhe 50% de desconto da primeira compra!!!</h3>
+			<form action="#" method="post">
+				<div class="form-group">
+					<label for="nome">Nome</label>
+					<input type="text" name="nome" id="nome" required="required" class="form-control">
+				</div>
+
+				<div class="row">
+					<div class="form-group col-xs-12 col-sm-6">
+						<label for="CPF">CPF</label> <!--CPF será XXX.XXX.XXX-XX-->
+						<input type="text" name="CPF" id="CPF" maxlength="14" pattern="/d{3}/d{3}/{3}/d{2}" class="form-control">
+					</div>
+					<div class="form-group col-xs-12 col-sm-6">
+						<label for="datanascimento">Data de Nascimento</label> <!--data de nascimento será xx/xx/xxxx-->
+						<input type="date" name="datanascimento" id="datanascimento" maxlength="10" required="required" class="form-control" >
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="email">E-mail</label>
+					<input type="email" name="email" id="email" required="required" class="form-control">
+				</div>
+				
+				<div class="row">
+					<div class="form-group col-xs-12 col-sm-6">
+						<label for="estado">Estado</label>
+						<select id="estado" name="estado" required="required" class="form-control"> <!--vai abrir em cascata para usuário selecionar, dentre as opções datas pela option value listadas abaixo-->
+							<option value="SP">São Paulo</option>
+							<option value="RJ">Rio de Janeiro</option>
+							<option value="MG">Minas Gerais</option>
+							<option value="PR">Paraná</option>
+							<option value="BA">Bahia</option>
+						</select>
+					</div>
+
+					<div class="form-group col-xs-12 col-sm-6">
+						<label for="cidade">Cidade</label>
+						<input type="text" name="cidade" id="cidade" required="required" class="form-control">
+					</div>
+				</div>
+
+
+
+
+				<div class="row">
+					<div class="form-group col-xs-12 col-sm-6">
+						<label for="senha">Senha</label>
+						<input type="password" name="senha" id="senha" required="required" class="form-control">
+					</div>
+					<div class="form-group col-xs-12 col-sm-6">
+						<label for="senha-confirmacao">Confirmação de Senha</label>
+						<input type="password" name="confirmarsenha" id="senha-confirmacao" required="required" class="form-control">
+					</div>
+				</div>
+
+
+				<div class="form-group">
+					<button type="submit" class="form__process">CADASTRAR</button>
+				</div>
+
+			</form>
+		</div>
+	</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<footer class="block-footer"> <!--class de bloco geral do rodapé-->
+		<div class="container"> <!--class do conteúdo do bootstrap-->
+			<p>&copy; Hat Shop. Todos os direitos reservados. Produzido por Juliana Madeira.</p>
+		</div>
+
+	</footer>
+	
+	<script src="javascripts/menu-controller.js"></script>
+	
+</body>
+</html>

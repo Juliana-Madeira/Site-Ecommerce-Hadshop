@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Juliana Madeira">
+	<meta name="keywords" content="chapéu, chapéus, hat, shop, boné, toucas,touca">
+	<meta name="description" content="Shopping especializado em Chapéus de Qualidade. Aproveite!!!">
+	<title>Hat Shop - Chapéus de Qualidade</title>
+	<link rel="stylesheet" type="text/css" href="css/extends/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/principal.css">
+	<link rel="stylesheet" type="text/css" href="css/block.css">
+	<link rel="stylesheet" type="text/css" href="css/elementos.css"> <!--arquivos dentro de uma pasta "css"-->
+</head>
+<body>
+
+	<header class="block-header block-header--fixed"> <!--aqui é o cabeçalho do corpo do site, vai o logotipo,esse header será impresso no navegador, como um bloco do cabeçalho geral e como fixed que
+				é um modificador-->
+		<div class="container"> <!--painel geral, div geral, caixa geral do cabeçalho, class com
+					conteúdo do bootstrap-->
+			<div class="block-header__logomarca"> <!--aqui vai o lotogipo-->
+				<a href="index.html"> <!--link no logotipo que vai direto pra página index.html-->
+					<img src="imagens/logotipo/logo.png" width="99" height="68"  alt="logotipo">
+				</a>
+			</div>
+
+					 <!--testando como na udemy para fazer menu numa outra div-->
+					<!--como no curso da softblue, no caso está dentro do header-->
+						<div class="block-header__menu"> 
+							<button class="bar-button js-bar-button"></button>
+							<!--colocar imagem desse botão acima no css e usar javascript-->
+							<ul class="header-menu js-menu"> <!--menu feito por meio de listas não ordenadas-->
+							<a href="index.html">
+								<li class="header-menu__item">Home</li>
+							</a>
+							<a href="sobre.html">
+								<li class="header-menu__item">Sobre</li>
+							</a>
+							<a href="contato.html">
+								<li class="header-menu__item">Contato</li>
+							</a>
+							<a href="" class="header-menu__item--button">
+								<li class="header-menu__item"> Restrito
+									<ul class="header-submenu"> <!--aqui é um bloco igual ao bloco do menu, header menu aqui é header submenu-->
+										<a href="login.html">
+											<li class="header-submenu__item">Login</li>
+										</a>
+										<a href="cadastro.html">
+											<li class="header-submenu__item">Cadastro</li>
+										</a>
+									</ul>
+								</li>
+							</a>
+							</ul>
+						</div>
+					
+			
+			<div class="block-header__descricao">Hat Shop</div> <!--fez isso como uma descrição do projeto,
+			é o nome da empresa abaixo do logotipo-->
+		</div>	
+	</header>
+	
+		
+	<!--aqui é o nav do site, com botão de cadastre-se-->
+	<nav class="block-nav">	<!--bloco nav geral-->
+		<div class="container-fluid"> <!--classe do bootstrap que preenche a tela toda, puxa para as laterais-->
+			<div class="nav-promocional">
+				<h1 class="nav-promocional__titulo">Realize sua primeira compra com 50% de desconto</h1>
+				<div class="nav-promocional__button">
+					<a href="cadastro.html">Cadastre-se</a>
+				</div>
+			</div>
+		</div>
+	</nav>	
+	
+	<!--PRODUTOS-->
+	<section class="block-section"> <!--seção de produtos-->
+		<div class="container"> <!--tudo numa div geral-->
+			<article class="section-produto"> <!--também é um bloco, geral de produtos-->
+				<header class="section-produto__imagem"> <!--imagem colocada nesse cabeçalho de cada produto-->
+					<img src="imagens/produtos/bone.jpg" alt="Primeiro Produto">
+				</header>
+				<section> <!--talvez aqui pudesse ser usada apenas uma div e não section-->
+					<div class="section-produto__descricao">Boné</div>
+					<div class="section-produto__valor">R$ 39,90</div>
+					<div class="section-produto__pagamento">em até 5 x sem juros!</div>
+				</section>
+				<footer class="section-produto__button"> <!--rodapé de cada produto onde fica o botão de comprar-->
+					<a href="#">Comprar</a>
+				</footer>
+			</article>
+
+		
+			<article class="section-produto section-produto--frete-gratis">
+				<header class="section-produto__imagem">
+					<img src="imagens/produtos/cowboy.png" alt="Segundo Produto">
+				</header>
+				<section>
+					<div class="section-produto__descricao">Chapéu Cowboy</div>
+					<div class="section-produto__valor">R$69,90 </div>
+					<div class="section-produto__pagamento">em até 5 x sem juros!</div>
+				</section>
+				<footer class="section-produto__button">
+					<a href="#">Comprar</a>
+				</footer>
+			</article>
+
+		
+			<article class="section-produto">
+				<header class="section-produto__imagem">
+					<img src="imagens/produtos/fedora.jpg" alt="Terceiro Produto">
+				</header>
+				<div>
+					<div class="section-produto__descricao">Chapéu Fedora</div>
+					<div class="section-produto__valor">R$89,90 </div>
+					<div class="section-produto__pagamento">em até 5 x sem juros!</div>
+				</div>
+				<div class="section-produto__button">
+					<a href="#">Comprar</a>
+				</div>
+			</article>
+		
+			<article class="section-produto section-produto--frete-gratis">
+				<header class="section-produto__imagem">
+					<img src="imagens/produtos/gorro.jpg" alt="Quarto Produto">
+				</header>
+				<div>
+					<div class="section-produto__descricao">Gorro</div>
+					<div class="section-produto__valor">R$39,90 </div>
+					<div class="section-produto__pagamento">em até 5 x sem juros!</div>
+				</div>
+				<div class="section-produto__button">
+					<a href="#">Comprar</a>
+				</div>
+			</article>
+		
+
+		
+			<article class="section-produto">
+				<header class="section-produto__imagem">
+					<img src="imagens/produtos/mexicano.png" alt="Quinto Produto">
+				</header>
+				<div>
+					<div class="section-produto__descricao">Chapéu Mexicano</div>
+					<div class="section-produto__valor">R$ 49,90</div>
+					<div class="section-produto__pagamento">em até 5 x sem juros!</div>
+				</div>
+				<div class="section-produto__button">
+					<a href="#">Comprar</a>
+				</div>
+			</article>
+		
+
+			<article class="section-produto">
+				<header class="section-produto__imagem">
+					<img src="imagens/produtos/panama.jpg" alt="Sexto Produto">
+				</header>
+				<div>
+					<div class="section-produto__descricao">Chapéu Panama</div>
+					<div class="section-produto__valor">R$ 69,90</div>
+					<div class="section-produto__pagamento">em até 5 x sem juros!</div>
+				</div>
+				<div class="section-produto__button">
+					<a href="#">Comprar</a>
+				</div>
+		
+			</article>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+	<footer class="block-footer"> <!--class de bloco geral do rodapé-->
+		<div class="container"> <!--class do conteúdo do bootstrap-->
+			<p>&copy; Hat Shop. Todos os direitos reservados. Produzido por Juliana Madeira.</p>
+		</div>
+
+	</footer>
+	
+	<script src="javascripts/menu-controller.js"></script>
+</body>
+</html>
